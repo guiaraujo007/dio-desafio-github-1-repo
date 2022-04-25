@@ -1,0 +1,42 @@
+// Primeiro passo para criar ssh é abrir o git bash e lançar 
+ssh-keygen -t ed25519 -C 
+
+// dar enter para salvar o local onde a chave vai ficar armazenada
+(/c/Users/guilh/.ssh/id_ed25519) dar enter
+
+// pede para dar y para sobrescrever uma chave antiga
+y
+
+// pede para salvar "passphrase" e confirmar "again"
+
+
+// ir para a pasta onde a chave esta salva
+cd /c/Users/guilh/.ssh/
+
+// dar ls para listar os arquivos
+ls
+
+// expor a chave publica para colocar no gitpub
+// dentro da pasta .ssh
+cat id_ed25519.pub
+// vai mostrar a chave ssh.pub 
+
+// colocar a chave no site do github em setting e salvar
+
+// voltar ao git bash e dar comando para ver o caminho da pasta
+pwd
+/c/Users/guilh/.ssh 
+
+// rodar o comando ssh agent
+eval $(ssh-agent -s)
+// deixa rodando o conteudo agent pid
+
+// agora add a chave. como ja esta no caminho certo é so add a chave privada para discriptograva e pedir senha:
+ssh-add id_ed25519
+
+//FINISH
+
+
+
+
+
