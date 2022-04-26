@@ -1,3 +1,30 @@
 // Passo a passo para commitar entre o repositorio local do git e gitHub
 
-// 
+// Cria a pasta no hd para o repositorio
+
+// abrir o git bash dentro da pasta que sera o repositorio
+
+// git clone + (colar o link do repositorio)
+
+// verificar se foi baixado na pasta
+
+// dar um cd para entrar no repositorio
+
+// git status verificar se está tudo ok branch (main)
+work tree clain
+
+// criar uma pasta adiconal
+
+// criar arq dentro da pasta
+
+// para enviar ao sevidor remoto 
+
+// git status vai identificar que tem pastas para serem enviados para versao 
+
+// dar git add . para enviar todos os arquivos
+
+// git status vai passar a informação que tem arquivos para verde
+
+// git commit -m "mensagem de nota da atualização"
+
+// git push origin main ( branch que quero enviar para github )   
